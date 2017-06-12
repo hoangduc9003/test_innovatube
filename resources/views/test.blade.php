@@ -9,10 +9,10 @@
 <body>
 <form action="{{action('TestController@test')}}" method="post">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-    <p><input type="number" name="A[]"></p>
-    <p><input type="number" name="A[]"></p>
-    <p><input type="number" name="A[]"></p>
-    <p><input type="number" name="A[]"></p>
+    <p><input type="number" name="A[]" min="1"></p>
+    <p><input type="number" name="A[]" min="1"></p>
+    <p><input type="number" name="A[]" min="1"></p>
+    <p><input type="number" name="A[]" min="1"></p>
 
     <p><input type="submit" value="Missing Number"></p>
 </form>
